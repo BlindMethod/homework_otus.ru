@@ -48,5 +48,6 @@ def filter_numbers(numbers, refund):
         result = [num for num in numbers if num % 2 != 0]
     elif refund == EVEN:
         result = [num for num in numbers if num % 2 == 0]
-    elif refund == PRIME:    result = list(filter(is_prime, numbers))
+    elif refund == PRIME:    
+        result = list(filter(is_prime, numbers))
     return result
